@@ -9,7 +9,7 @@ h1,h2,h3,h4,h5,h6{font-family:'Open Sans','Helvetica Neue',Arial,sans-serif}
 .bg-primary{background-color:#f05f40!important}
 .bg-aboutUs{background-image:url(../img/aboutUsBackground.JPG);background-position:center center;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover}
 .bg-vlog{background-image:url(../img/vlog.jpeg);background-position:center center;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover}
-.bg-gallery{background-image:url(../img/gallerybackground.JPG);background-position:center center;}
+.bg-gallery{background :url(../img/gallerybackground.JPG);background-position:center center; background-size: 100%;}
 .bg-dark{background-color:#212529!important}
 .text-faded{color:rgba(255,255,255,.9)}
 section{padding:8rem 0}
