@@ -156,7 +156,7 @@ img::-moz-selection {
 
 	#mainNav 
 	.navbar-brand {
-		color: rgba(255, 255, 255, .7)
+		color: rgba(237, 227, 216, 1.0)
 	}
 
 	#mainNav 
@@ -173,7 +173,7 @@ img::-moz-selection {
 	#mainNav 
 	.navbar-nav>li.nav-item>a.nav-link, #mainNav 
 	.navbar-nav>li.nav-item>a.nav-link:focus {
-		color: rgba(255, 255, 255, .7)
+		color: rgba(237, 227, 216, 1.0)
 	}
 
 	#mainNav 
@@ -213,12 +213,16 @@ img::-moz-selection {
 header.masthead {
 	padding-top: 10rem;
 	padding-bottom: calc(10rem - 56px);
-	background-image: url(../img/header.jpg);
+	background-image: url(../img/header.JPG), 
+					  url(../img/gallery/1-washingtondc.JPG), 
+					  url(../img/gallery/0-sanfrancisco.JPG),
+					  url(../img/gallery/11-hawaii.JPG),
+					  url(../img/gallery/2-LA.JPG);
 	background-position: center center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
-	background-size: cover
+	background-size: cover;
 }
 
 header.masthead hr {
