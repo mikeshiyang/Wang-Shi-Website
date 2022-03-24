@@ -60,6 +60,13 @@ h1, h2, h3, h4, h5, h6 {
 	background-size: 100%;
 }
 
+.map {
+	width: 900px;
+	height: 600px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
 .bg-dark {
 	background-color: #212529 !important
 }
