@@ -20,7 +20,6 @@
 
   <!-- Bootstrap Core CSS -->
   <!-- 3/22/2022: Updated to the latest version of Bootstrap (4.1.3) -->
-
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
   <!-- Custom Fonts from the copied project -->
@@ -42,6 +41,9 @@
   <!-- Custom favicon TODO:// need to change the icon-->
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 
+  <link href="jqvmap-master/dist/jqvmap.css" media="screen" rel="stylesheet" type="text/css"/>
+
+  <!-- Scripts -->
   <!-- Google Analytics Tracking Tag. Track how people access my site and such.
        (assuming they don't block ads or whatever from Google) -->
   <!-- TODO:// Might want to change -->
@@ -53,45 +55,41 @@
     ga('create', 'UA-68657454-1', 'auto');
     ga('send', 'pageview');
   </script>
-
-  <link href="jqvmap-master/dist/jqvmap.css" media="screen" rel="stylesheet" type="text/css"/>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script type="text/javascript" src="jqvmap-master/dist/jquery.vmap.js"></script>
-  <script type="text/javascript" src="jqvmap-master/dist/maps/jquery.vmap.usa.js" charset="utf-8"></script>
-
-  <script type="text/javascript">
+  <script src="jqvmap-master/dist/jquery.vmap.js"></script>
+  <script src="jqvmap-master/dist/maps/jquery.vmap.usa.js"></script>
+  <script>
     jQuery(document).ready(function() {
       jQuery('#vmap').vectorMap(
-{
-    map: 'usa_en',
-    backgroundColor: '#a5bfdd',
-    borderColor: '#818181',
-    borderOpacity: 0.25,
-    borderWidth: 1,
-    color: '#f4f3f0',
-    enableZoom: true,
-    hoverColor: '#c9dfaf',
-    hoverOpacity: null,
-    normalizeFunction: 'linear',
-    scaleColors: ['#b6d6ff', '#005ace'],
-    selectedColor: '#c9dfaf',
-    selectedRegions: ['WA', 'CA', 'OR', 'NY', 'HI', 'DC'],
-    showTooltip: true,
-    showLabels: true,
-    multiSelectRegion: true,
-    onRegionClick: function(element, code, region)
-    {
-        var message = 'You clicked "'
-            + region
-            + '" which has the code: '
-            + code.toUpperCase();
+      {
+          map: 'usa_en',
+          backgroundColor: '#a5bfdd',
+          borderColor: '#818181',
+          borderOpacity: 0.25,
+          borderWidth: 1,
+          color: '#f4f3f0',
+          enableZoom: true,
+          hoverColor: '#c9dfaf',
+          hoverOpacity: null,
+          normalizeFunction: 'linear',
+          scaleColors: ['#b6d6ff', '#005ace'],
+          selectedColor: '#c9dfaf',
+          selectedRegions: ['WA', 'CA', 'OR', 'NY', 'HI', 'DC'],
+          showTooltip: true,
+          showLabels: true,
+          multiSelectRegion: true,
+          onRegionClick: function(element, code, region)
+          {
+              var message = 'You clicked "'
+                  + region
+                  + '" which has the code: '
+                  + code.toUpperCase();
 
-        alert(message);
-    }
-});
+              alert(message);
+          }
+      });
     });
   </script>
-
 </head>
 
 <!-- Navigation bar -->
@@ -127,6 +125,7 @@
       </div>
     </div>
   </nav>
+
   <!--  Intro Section -->
   <header class="masthead text-center text-white d-flex">
     <div class="container my-auto">
@@ -151,7 +150,6 @@
     </div>
   </header>
 
-
   <!-- About Us Section -->
   <section class="bg-aboutUs" id="about">
     <div class="container-fluid">
@@ -162,51 +160,34 @@
         </div>
       </div>
       <div class="row">
+        <!-- Yucong selfie -->
         <div class="col-lg-3 col-md-6 col-sm-6 text-center mb-4">
-          <!-- About Us Section 
-          <i class="fa fa-4x fa-id-card-o text-faded sr-icons"></i>
-          <h3 class="text-white">Degree</h3>
-          <p class="text-faded">Bachelor of Science in Computer Science from
-          <a class="text-white-link" href="https://www.uml.edu/" class="text-blue">UMass Lowell</a></p>
-          -->
           <img src="img/wang.jpg" 
                  class="img-fluid images-size-selfie" 
                  alt="Yucong Wang">
         </div>
 
+        <!-- Yucong intro -->
         <div class="col-lg-3 col-md-6 col-sm-6 text-center div-padding-fix mb-4">
-          <!-- About Us Section 
-          <i class="fa fa-4x fa-graduation-cap text-faded sr-icons"></i>
-        -->
           <h3 class="text-white text-left">MSEE@UCLA</h3>
           <h3 class="text-white text-left">SDE@Google</h3>
           <h3 class="text-white text-left">Hometown@Xinji Hebei</h3>
           <h3 class="text-white text-left">Software Engineer, Pastry Chef！Designer!</h3>
-          <img src="img/cake.JPG" 
-                 class="img-fluid images-size-selfie" 
-                 alt="cake">
+          <img src="img/cake.JPG" class="img-fluid images-size-selfie" alt="cake">
         </div>
 
+        <!-- Yang selfie -->
         <div class="col-lg-3 col-md-6 col-sm-6 text-center mb-4">
-          <!-- About Us Section 
-          <i class="fa fa-4x fa-id-card-o text-faded sr-icons"></i>
-          <h3 class="text-white">Degree</h3>
-          <p class="text-faded">Bachelor of Science in Computer Science from
-          <a class="text-white-link" href="https://www.uml.edu/" class="text-blue">UMass Lowell</a></p>
-          -->
-          <img src="img/shi.JPG" 
-                 class="img-fluid images-size-selfie" 
-                 alt="Yang Shi">
+          <img src="img/shi.JPG" class="img-fluid images-size-selfie" alt="Yang Shi">
         </div>
 
+        <!-- Mike intro -->
         <div class="col-lg-3 col-md-6 col-sm-6 text-center div-padding-fix mb-4">
           <h3 class="text-white text-left">MSEE@UCLA</h3>
           <h3 class="text-white text-left">SDE@Microsoft</h3>
           <h3 class="text-white text-left">Hometown@Shanghai</h3>
           <h3 class="text-white text-left">Software Engineer, Photographer, Gamer, Gooner!</h3>
-          <img src="img/arsenal.JPG" 
-                 class="img-fluid images-size-selfie" 
-                 alt="Arsenal">
+          <img src="img/arsenal.JPG" class="img-fluid images-size-selfie" alt="Arsenal">
         </div>
       </div>
     </div>
@@ -220,10 +201,13 @@
           <h2 class="section-heading text-white">Gallery</h2>
           <hr class="primary">
         </div>
+
+        <!-- TODO: MAP -->
         <div class="col-lg-12 text-center">
           <div class="map" id="vmap"></div>
         </div>
 
+        <!-- Galleries about every place we've been to-->
         <div class="col-lg-4 col-sm-6 text-center">
           <h3 class="mt-4 mb-4 ">San Francisco</h3>
           <img src="img/gallery/0-sanfrancisco.JPG" 
@@ -553,7 +537,7 @@
   <!-- Also pulling in the Bootstrap 4 update from Start Bootstrap too
        https://github.com/BlackrockDigital/startbootstrap-creative  -->
 
-  <!-- Bootstrap 4.1 JS -->
+  <!-- Bootstrap 4.1.3 JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   
   <!-- Plugin & Theme JavaScript (With Bootstrap 4 Update) -->
